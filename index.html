@@ -1,0 +1,233 @@
+<style>
+ 
+ body { 
+   padding: 0 40px;
+   margin: 0;
+   text-align: center;
+   background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Ffilosophy.org%2Fcode%2Fusing-html5-canvas-to-make-a-generative-background%2F&psig=AOvVaw1sKGNazNbUedWFywvQFWRH&ust=1621804717716000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDDi8ib3vACFQAAAAAdAAAAABAD) ; 
+   background-repeat: repeat;
+   }
+   
+* { 
+   box-sizing: border-box;
+  }
+  
+a {
+   text-decoration: none;
+   }
+   
+ul {
+    list-style: none;
+	padding: 0;
+	margin: 0;
+ }
+   
+ul li {
+   flex: 1;
+   } 
+      
+header {
+   position: fixed;
+   top: 0;
+   left: 0;  
+}
+ 
+footer {
+   padding: 20px;
+   border-top: 1px solid #ccc;
+   }
+   
+#navbar {
+  width: 300px;
+  background-color: #333;
+  padding: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+   }
+  
+
+#navbar a {
+  color: #fff;
+  font-weight: 500;
+}
+
+#navbar a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  }
+
+ #navbar li {
+  flex: 1;
+  } 
+    
+
+#welcome-section {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }   
+  
+.row-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   }
+  
+.row {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background: red;
+   }
+   
+.responsive-img {
+   max-width: 100%;
+   height: auto;
+   }
+.contact-link{
+  display: inline-block;
+  margin: 5px;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  }
+  
+.contact-link img {
+     border-radius: 2px;
+  }
+ 
+.projects-grid {
+    display: grid;
+	grid-template-columns : repeat(auto-fit, minmax(320px, 1fr))
+	grid-gap: 2em;
+	width: 100%;
+	margin: 0 auto 100px auto;
+  }	
+ .project-tile {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4)
+	border-radius: 5px;
+	background-color: white;
+	}
+	
+.project-tile img {
+   height: 400px;
+   width: 100%;
+   border-bottom: 1px solid #ccc;
+   object-fit: cover;
+}  
+ 
+.project-tile p {
+    color: #333;
+	font-weight: 700;
+	background-color: whitw;
+	}
+	
+ 
+@media only screen and (max-width: 400px) {
+  #navbar .row {
+    width: 200px;
+    font-size: 0.8em;
+   }
+}   
+ 
+ 
+</style>
+
+
+<html>
+
+ <body>
+  <header class="row-container">
+    <nav id="navbar">
+      <ul class="row">
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+	</navbar>
+</header>
+		
+<main>
+    <div id="welcome-section">
+	<div>
+	  <h1>Hello Everyone, My Name is Jijnasa</h1>
+	  <p><b>I am learning to code to achieve my dreams to become a software developer</b></p> 
+	</div>
+	</div>
+	<div id="projects">
+	    <h1>Projects</h1>
+		<div class="projects-grid">
+        <div class="project-tile">
+           <a href="https://jijna.github.io/Mahatma-Gandhi-Tribute-Page-FreeCodeCamp/" target="_blank" class="project"> 
+           <img src="https://www.pulitzer.org/cms/sites/default/files/styles/page_photo/public/main_images/mahatma-gandhi960.jpg"
+		   alt="Tribute page project" width="3" height="10" >
+           <p>Tribute page</p>		   
+		   </a>
+		   
+		    <a href="https://jijna.github.io/SurveyForm-FreeCodeCamp/" target="_blank" class="project"> 
+           <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--C9uqrIsY--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bgqzloq4s1awu7bxlsqq.jpg"
+		   alt="surveyform" width="10" height="8">
+           <p>Surveyform</p>		   
+		   </a>
+		   
+		   <a href="https://jijna.github.io/Technical-Documentation-FreeCodeCamp/" target="_blank" class="project"> 
+           <img src="https://designingforuncertainty.com/wp-content/uploads/2020/09/maxresdefault-10.jpg"
+		   alt="technical documentation page" width="10" height="10">
+           <p>Technical documentation page</p>		   
+		   </a>
+		   
+		    <a href="https://jijna.github.io/Product-Landing-Page-FreeCodeCamp/" target="_blank" class="project"> 
+           <img src="https://www.theme-junkie.com/wp-content/uploads/1359-eco-landing-page-wordpress-theme-large.png"
+		   alt="product landing page" width="10" height="10">
+           <p>Product landing page</p>		   
+		   </a>
+		   
+		   
+		   
+		   
+         </div>
+    </div>
+</main>
+	
+<footer class="row-container">
+	<ul id="contact" class="row">
+	  <li><a  id="profile-link" class="contact-link" href="" target="_blank"><img class="responsive-img" 
+	  src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/71-github-512.png"
+	  alt="github"/></a></li>
+	  
+	  <li><a class="contact-link"  href="https://www.linkedin.com/in/jijnasavegi" target="_blank"><img class="responsive-img" 
+	  src="https://cdn1.iconfinder.com/data/icons/black-socicons/512/linkedin-256.png" alt="linkedin"/></a></li>
+	  
+	  <li><a class="contact-link" href="" target="_blank"><img class="responsive-img" 
+	  src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="facebook"/></a></li>
+	  
+	</ul>
+	  
+	  
+</footer>
+</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+
+</html>
